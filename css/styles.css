@@ -327,7 +327,7 @@ header.main nav.main ul li {
 }
 
 .emotion .slider .slick-arrow svg {
-	fill: #f16d07;
+	fill: #fff;
 	height: 2.0625rem;
 	width: 2.0625rem;
 }
@@ -341,7 +341,7 @@ header.main nav.main ul li {
 }
 
 main.content {
-	padding: 50px 0
+	padding: 50px 0;
 }
 
 footer.main {
