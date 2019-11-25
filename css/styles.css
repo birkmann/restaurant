@@ -49,6 +49,12 @@ h2 {
 	margin: 0 auto;
 }
 
+@media (min-width: 1000px) {
+	.container {
+		padding: 0 50px;
+	}
+}
+
 header.main {
 	position: fixed;
 	width: 100%;
