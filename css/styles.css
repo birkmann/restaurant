@@ -348,6 +348,11 @@ header.main nav.main ul li {
 	font-size: 3em;
 }
 
+.emotion p {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
 .emotion .slider .slide:after {
 	background-color: rgba(0,0,0,.45);
 	content: "";
