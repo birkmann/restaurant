@@ -338,14 +338,22 @@ header.main nav.main ul li {
 	transform: translateX(-50%) translateY(-50%);
 	z-index: 2;
 	color: #fff;
-	font-size: 1.7em;
+	font-size: 1.2em;
 	line-height: 1.6em;
+	min-width: 280px;
+}
+
+@media (min-width: 1000px) {
+	.emotion .center {
+		font-size: 1.7em;
+	}
 }
 
 .emotion h2 {
 	font-family: 'Oleo Script', sans-serif;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	font-size: 3em;
+	line-height: 0.75em;
 }
 
 .emotion p {
