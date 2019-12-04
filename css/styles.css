@@ -6,6 +6,11 @@ body {
 	width: 100%;
 }
 
+:root {
+	--main-color: #f16d07;
+	--main-color-hover: #f16d07;
+}
+
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -25,6 +30,21 @@ h2 {
 	line-height: 1.4em;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+a.button {
+	background: var(--main-color);
+	color: #fff;
+	display: inline-block;
+	padding: 10px 35px;
+	border-radius: 3px;
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: all 0.25s ease-in-out;
+}
+
+a.button:hover {
+  	background: #333;
 }
 
 .img-r {
@@ -66,28 +86,30 @@ header.main {
 header.main a {
 	text-decoration: none;
 	color: #fff;
+	transition: all 0.15s ease-in-out;
 }
 
 header.main a:hover {
-	color: #f16d07;
+	color: var(--main-color);
 }
 
-header.main a.logo {
+a.logo {
 	font-family: 'Oleo Script', sans-serif;
 	font-size: 33px;
 	line-height: 1em;
 	color: #fff;
 	text-align: center;
 	z-index: 100;
+	text-decoration: none;
 }
 
 @media (min-width: 1000px) {
-	header.main a.logo {
+	a.logo {
 		font-size: 50px;
 	}
 }
 
-header.main a.logo .pre {
+a.logo .pre {
 	font-size: 0.6em;
 	margin-bottom: -20px;
 	margin-right: 30px;
@@ -202,7 +224,12 @@ header.main nav.main ul li {
 }
 
 .social-icons svg>* {
-	fill: #f16d07;
+	fill: var(--main-color);
+	transition: all 0.15s ease-in-out;
+}
+
+.social-icons a:hover svg>* {
+	fill: #fff;
 }
 
 @media (min-width: 1000px) {
@@ -225,7 +252,7 @@ header.main nav.main ul li {
 	position: absolute;
 	height: 3px;
 	width: 100%;
-	background: #f16d07;
+	background: var(--main-color);
 	opacity: 1;
 	left: 0;
 	transition: .25s ease-in-out;
@@ -301,9 +328,27 @@ header.main nav.main ul li {
 	display: block;
 	background-size: cover;
 	background-position: center;
+	position: relative;
 }
 
-.emotion .slider:before {
+.emotion .center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 2;
+	color: #fff;
+	font-size: 1.7em;
+	line-height: 1.6em;
+}
+
+.emotion h2 {
+	font-family: 'Oleo Script', sans-serif;
+	margin-bottom: 0;
+	font-size: 3em;
+}
+
+.emotion .slider .slide:after {
 	background-color: rgba(0,0,0,.45);
 	content: "";
 	z-index: 1;
