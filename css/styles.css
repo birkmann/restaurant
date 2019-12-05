@@ -216,7 +216,7 @@ header.main nav.main ul li {
 		display: flex;
 		justify-content: space-between;
 		max-width: 55.625rem;
-		width: 75%;
+		width: 65%;
 	}
 	header.main nav.main ul.menu-primary a {
 		font-size: 1rem;
@@ -454,7 +454,7 @@ main.content {
 footer.main {
 	background: #111;
 	color: #eee;
-	background-image: url(https://images.pexels.com/photos/2586924/pexels-photo-2586924.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-image: url(https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-size: cover;
 	background-position: center;
 }
