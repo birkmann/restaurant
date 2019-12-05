@@ -14,8 +14,8 @@ body {
 
 
 :root {
-	--main-color: #f16d07;
-	--main-color-hover: #f16d07;
+	--c01: #57ad57;
+	--c01-hover: #469c46;
 }
 
 *, *:before, *:after {
@@ -40,18 +40,20 @@ h2 {
 }
 
 a.button {
-	background: var(--main-color);
+	background: var(--c01);
 	color: #fff;
 	display: inline-block;
 	padding: 10px 35px;
 	border-radius: 3px;
 	text-decoration: none;
 	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: 3px;
 	transition: all 0.25s ease-in-out;
 }
 
 a.button:hover {
-  	background: #111;
+  	background: var(--c01-hover);
 }
 
 .img-r {
@@ -88,6 +90,11 @@ header.main {
 	z-index: 100;
 	min-height: 80px;
 	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0));
+	transition: all 0.5s ease-in-out;
+}
+
+body.scrolled header.main {
+	background: rgb(0,0,0,0.95);
 }
 
 header.main a {
@@ -97,7 +104,7 @@ header.main a {
 }
 
 header.main a:hover {
-	color: var(--main-color);
+	color: var(--c01);
 }
 
 a.logo {
@@ -231,7 +238,7 @@ header.main nav.main ul li {
 }
 
 .social-icons svg>* {
-	fill: var(--main-color);
+	fill: var(--c01);
 	transition: all 0.15s ease-in-out;
 }
 
@@ -259,7 +266,7 @@ header.main nav.main ul li {
 	position: absolute;
 	height: 3px;
 	width: 100%;
-	background: var(--main-color);
+	background: var(--c01);
 	opacity: 1;
 	left: 0;
 	transition: .25s ease-in-out;
@@ -347,20 +354,40 @@ header.main nav.main ul li {
 	transform: translateX(-50%) translateY(-50%);
 	z-index: 2;
 	color: #fff;
-
 	min-width: 280px;
 }
 
-@media (min-width: 1000px) {
+.emotion .center img.icon {
+	width: 40px;
+	display: inline-block;
+	margin: 10px auto;
+}
 
+.emotion .center .icon-wrapper {
+	position: relative;
+}
 
+.emotion .center .icon-wrapper:before,
+.emotion .center .icon-wrapper:after {
+	content: "";
+    width: 25%;
+    height: 1px;
+    display: block;
+    background: var(--c01);
+    position: absolute;
+    left: 18%;
+    top: 46%;
+}
 
+.emotion .center .icon-wrapper:after {
+	left: auto;
+    right: 18%;
 }
 
 .emotion h2 {
 	font-family: 'Oleo Script', sans-serif;
 	margin-bottom: 10px;
-	font-size: 3em;
+	font-size: 4em;
 	line-height: 0.75em;
 }
 
@@ -369,6 +396,12 @@ header.main nav.main ul li {
 	margin-bottom: 25px;
 	font-size: 1.2em;
 	line-height: 1.4em;
+}
+
+.emotion .button {
+	text-transform: uppercase;
+	font-size: 1rem;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.15)
 }
 
 .emotion .slider .slide:after {
@@ -475,7 +508,7 @@ footer.main a {
 }
 
 footer.main a:hover {
-	color: var(--main-color);
+	color: var(--c01);
 }
 
 footer.main ul {
