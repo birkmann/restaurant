@@ -51,7 +51,7 @@ a.button {
 }
 
 a.button:hover {
-  	background: #333;
+  	background: #111;
 }
 
 .img-r {
@@ -316,10 +316,12 @@ header.main nav.main ul li {
 	}
 }
 
+/*
 .emotion {
     -webkit-clip-path: polygon(0 0,100% 0,100% 90.3511%,0 100%);
     clip-path: polygon(0 0,100% 0,100% 90.3511%,0 100%);
 }
+*/
 
 .emotion .slider {
 	width: 100%;
@@ -417,8 +419,95 @@ main.content {
 }
 
 footer.main {
-	background: #000;
+	background: #111;
+	color: #eee;
+	background-image: url(https://images.pexels.com/photos/2586924/pexels-photo-2586924.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+}
+
+footer.main .top {
+	padding: 100px 0 50px;
+	background: rgba(0,0,0,0.9);
+	text-align: center;
+}
+
+footer.main .top .container {
+	max-width: 600px;
+}
+
+footer.main .top h3 {
+    font-family: 'Oleo Script', sans-serif;
+    font-size: 2em;
+}
+
+footer.main .middle {
+	padding: 50px 0;
+	background: rgba(0,0,0,0.9);
+}
+
+footer.main .middle:before {
+	content: "";
+	width: calc(100% - 100px);
+	margin: -50px auto 50px;
+	height: 1px;
+	background: rgba(255,255,255,0.1);
+	display: block;
+}
+
+footer.main .bottom {
+	background: rgba(0,0,0,0.95);
+	text-align: center;
+	padding: 20px;
+	font-size: 0.9em;
+}
+
+footer.main h3 {
+	margin: 0 0 20px;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+footer.main a {
 	color: #fff;
+	text-decoration: none;
+	transition: all 0.15s ease-in-out;
+}
+
+footer.main a:hover {
+	color: var(--main-color);
+}
+
+footer.main ul {
+	padding-left: 20px;
+	margin: 0;
+}
+
+footer.main .row .col:nth-child(1) li {
+	margin-bottom: 18px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+footer.main .row .col:nth-child(2) li {
+	margin-bottom: 10px;
+}
+
+footer.main .row .col:nth-child(3) ul {
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+footer.main .row .col:nth-child(3) li {
+	list-style: none;
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	line-height: 2em;
+}
+
+footer.main .row .col:nth-child(3) li p {
+	margin: 0 0 0 auto;
 }
 
 @media (min-width: 1000px) {
@@ -429,7 +518,7 @@ footer.main {
 	}
 
 	footer.main .row .col {
-		width: 50%;
-		margin: 20px;
+		flex: 0 25%;
+		margin: 0 25px;
 	}
 }
