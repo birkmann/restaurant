@@ -223,6 +223,12 @@ header.main nav.main ul li {
 	}
 }
 
+@media (min-width: 1200px) {
+	header.main nav.main ul.menu-primary a {
+		font-size: 1.1rem;
+	}
+}
+
 .social-icons {
 	align-items: center;
 	display: flex;
@@ -232,18 +238,24 @@ header.main nav.main ul li {
 	padding: 0;
 }
 
-.social-icons svg {
-	height: 1.5625rem;
-	width: 1.5625rem;
+.social-icons i {
+    color: var(--c01);
+    transition: all 0.15s ease-in-out;
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
 }
 
-.social-icons svg>* {
-	fill: var(--c01);
-	transition: all 0.15s ease-in-out;
+.social-icons i:before {
+	font-size: 1.5em;
 }
 
-.social-icons a:hover svg>* {
-	fill: #fff;
+.social-icons i:hover {
+	color: #fff;
 }
 
 @media (min-width: 1000px) {
@@ -357,10 +369,9 @@ header.main nav.main ul li {
 	min-width: 280px;
 }
 
-.emotion .center img.icon {
-	width: 40px;
-	display: inline-block;
-	margin: 10px auto;
+.emotion .center i:before {
+	font-size: 2.5em;
+	margin-left: 0;
 }
 
 .emotion .center .icon-wrapper {
@@ -386,14 +397,14 @@ header.main nav.main ul li {
 
 .emotion h2 {
 	font-family: 'Oleo Script', sans-serif;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	font-size: 4em;
 	line-height: 0.75em;
 }
 
 .emotion p {
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 1.2em;
     line-height: 1.4em;
     max-width: 700px;
