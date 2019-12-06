@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font: 14px/1.6em sans-serif;
+	font: 14px/1.6em 'Roboto', sans-serif;
 	color: #333;
 	overflow-x: hidden;
 	width: 100%;
@@ -8,7 +8,7 @@ body {
 
 @media (min-width: 1000px) {
 	body {
-		font: 16px/1.6em sans-serif;
+		font: 16px/1.6em 'Roboto', sans-serif;
 	}
 }
 
@@ -404,21 +404,26 @@ header.main nav.main ul li {
 }
 
 .emotion p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 1.2em;
-    line-height: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    line-height: 1.6em;
     max-width: 700px;
 }
 
+.emotion p span {
+	font-weight: 300;
+}
+
 .emotion .button {
+	margin-top: 10px;
 	text-transform: uppercase;
 	font-size: 1rem;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.15)
 }
 
 .emotion .slider .slide:after {
-	background-color: rgba(0,0,0,.45);
+	background-color: rgba(0,0,0,.5);
 	content: "";
 	z-index: 1;
 	pointer-events: none;
@@ -460,6 +465,60 @@ header.main nav.main ul li {
 	left: 0.625rem;
 }
 
+.intro h4 {
+	color: var(--c01);
+	margin: 5px 0;
+}
+
+.intro h2 {
+	margin: 10px 0 20px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 2.5em;
+	line-height: 1.2em;
+}
+
+.intro p {
+	line-height: 1.8em;
+}
+
+.intro ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 25px 0;
+	padding: 0 0 0 25px;
+}
+
+.intro ul li {
+	flex: 0 50%;
+	line-height: 2em;
+}
+
+.intro figure img {
+	width: 100%;
+	height: auto;
+}
+
+.intro .awards {
+	display: flex;
+}
+
+.intro .awards img {
+	max-height: 150px;
+}
+
+@media (min-width: 1000px) {
+	.intro .row {
+		display: flex;
+		justify-content: space-between;
+	}
+	.intro .col {
+		width: 48%;
+	}
+	.intro .awards img {
+		margin-right: 20px;
+	}
+}
+
 main.content {
 	padding: 50px 0;
 }
@@ -467,7 +526,7 @@ main.content {
 footer.main {
 	background: #111;
 	color: #eee;
-	background-image: url(https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-image: url(https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-size: cover;
 	background-position: center;
 }
