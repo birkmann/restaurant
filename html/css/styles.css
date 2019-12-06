@@ -16,6 +16,7 @@ body {
 :root {
 	--c01: #57ad57;
 	--c01-hover: #469c46;
+	--mobile-menu-bg: #111;
 }
 
 *, *:before, *:after {
@@ -145,7 +146,7 @@ header.main nav.main {
 
 @media (max-width: 999px) {
 	header.main nav.main {
-		background-color: #383f5a;
+		background-color: var(--mobile-menu-bg);
 		bottom: 0;
 		left: 0;
 		position: fixed;
@@ -482,8 +483,9 @@ footer.main .top .container {
 }
 
 footer.main .top h3 {
-    font-family: 'Oleo Script', sans-serif;
+	font-family: 'Oleo Script', sans-serif;
     font-size: 2em;
+    color: var(--c01);
 }
 
 footer.main .middle {
@@ -523,9 +525,43 @@ footer.main a:hover {
 	color: var(--c01);
 }
 
+footer.main img.banner {
+	width: 100%;
+    padding: 15px;
+}
+
 footer.main ul {
-	padding-left: 20px;
+	padding-left: 25px;
 	margin: 0;
+}
+
+footer.main .row .col li {
+	list-style: none;
+	position: relative;
+}
+
+footer.main .row .col li.address:before {
+	content: "\f106";
+	font-family: Flaticon;
+	color: var(--c01);
+	position: absolute;
+	left: -25px;
+}
+
+footer.main .row .col li.mail:before {
+	content: "\f107";
+	font-family: Flaticon;
+	color: var(--c01);
+	position: absolute;
+	left: -25px;
+}
+
+footer.main .row .col li.phone:before {
+	content: "\f108";
+	font-family: Flaticon;
+	color: var(--c01);
+	position: absolute;
+	left: -25px;
 }
 
 footer.main .row .col:nth-child(1) li {
@@ -536,6 +572,18 @@ footer.main .row .col:nth-child(1) li {
 
 footer.main .row .col:nth-child(2) li {
 	margin-bottom: 10px;
+}
+
+footer.main .row .col:nth-child(2) li:before {
+	display: block;
+    height: 1px;
+    margin-top: 0;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 7px;
+    background-color: var(--c01);
 }
 
 footer.main .row .col:nth-child(3) ul {
