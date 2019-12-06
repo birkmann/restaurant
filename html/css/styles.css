@@ -465,6 +465,10 @@ header.main nav.main ul li {
 	left: 0.625rem;
 }
 
+main.content {
+	padding: 50px 0;
+}
+
 .intro h4 {
 	color: var(--c01);
 	margin: 5px 0;
@@ -521,8 +525,102 @@ header.main nav.main ul li {
 	}
 }
 
-main.content {
-	padding: 50px 0;
+.services {
+	background: #111;
+	color: #fff;
+	background-image: url(https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 100px 0;
+	margin: 50px 0;
+}
+
+.services:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+}
+
+.services .container {
+	position: relative;
+	z-index: 1;
+}
+
+.services h4,
+.services h2 {
+	text-align: center;
+	margin: 10px 0;
+}
+
+.services h4 {
+	color: var(--c01);
+}
+
+.services h2 {
+	margin-bottom: 50px;
+	font-size: 2.5em;
+}
+
+.services h3 {
+    color: var(--c01);
+    font-size: 1.5em;
+}
+
+.services a {
+    color: var(--c01);
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid var(--c01);
+    padding: 5px 15px;
+    transition: all 0.25s ease-in-out;
+    margin-top: 5px;
+}
+
+.services a:hover {
+    background: var(--c01);
+    color: #fff;
+}
+
+.services .box {
+	margin: 40px 0 0;
+	text-align: center;
+	padding: 40px 30px;
+	border: 1px solid #222;
+	background: rgba(0,0,0,0.5);
+}
+
+.services .box i {
+	width: 80px;
+	height: 80px;
+	background: var(--c01);
+	text-align: center;
+	border-radius: 100%;
+	display: block;
+	margin: -90px auto 0;
+}
+
+.services .box i:before {
+	font-size: 40px;
+	color: #fff;
+	line-height: 80px;
+	margin: 0;
+}
+
+@media (min-width: 1000px) {
+	.services .row {
+		display: flex;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.services .row .col {
+		flex: 0 33%;
+		margin: 0 25px;
+	}
 }
 
 footer.main {
