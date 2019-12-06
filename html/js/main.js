@@ -12,9 +12,23 @@ $(document).ready(function() {
   	});
 });
 
-$(window).scroll(function(){
+$(window).on("load resize scroll",function(e){
 	if ( $(this).scrollTop() > 200 ) { 
 		$('body').addClass("scrolled");
+		var position = $(window).scrollTop(); 
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if(scroll > position) {
+						//down
+						$("body").addClass("down");
+						$("body").removeClass("up");
+					} else {
+						//up
+						$("body").addClass("up");
+						$("body").removeClass("down");
+					}
+					position = scroll;
+				});
 	} else { 
 		$('body').removeClass("scrolled");
 	}
