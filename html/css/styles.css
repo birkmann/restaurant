@@ -527,7 +527,8 @@ footer.main a:hover {
 
 footer.main img.banner {
 	width: 100%;
-    padding: 15px;
+    border: 1px dashed var(--c01);
+    max-width: 255px;
 }
 
 footer.main ul {
