@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$(".slider").slick({
 		autoplay: false,
   		autoplaySpeed: 5000,
+  		dots: true,
 		prevArrow: '<button type="button" class="slick-prev svg slick-arrow"><svg viewBox="0 0 188.5 306"><polygon points="71 153 188.5 35.5 153 0 0 153 153 306 188.5 270.5 "></polygon></svg></button>',
 		nextArrow: '<button type="button" class="slick-next svg slick-arrow"><svg viewBox="0 0 188.5 306"><polygon points="117.5 153 0 270.5 35.5 306 188.5 153 35.5 0 0 35.5 "></polygon></svg></button>'
   	});
